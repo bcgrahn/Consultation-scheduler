@@ -36,11 +36,6 @@ jobs:
         uses: coverallsapp/github-action@v1.1.2
         with:
           github-token: ${{ github.token }}
-
-      - name: Launch app
-        run: | 
-          npm install
-          npm run start
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
